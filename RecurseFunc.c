@@ -14,12 +14,27 @@ int HCF(int a, int b)
 }
 
 
+void func1(int a, int b, int c, int d)
+{
+    int m = HCF(a,b);
+    int n = HCF(c,d); 
+    int x;
+    if (m>n)
+    {
+        x = HCF(m,n);
+    }
+    else
+    {
+        x = HCF(n,m);
+    }
+    
+    printf("HCF is %d",x);     
+    
+}
 
 int main()
 {
-    int hcf = HCF(360,198);
-    printf("HCF is %d", hcf);
-   
+    func1(89,67,45,41);
 
     return 0;
 }
