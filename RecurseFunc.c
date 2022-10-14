@@ -32,9 +32,22 @@ void func1(int a, int b, int c, int d)
     
 }
 
+int pwr(int m, int n)
+{
+    int q;
+    if (n==0)
+    {
+        return 1;
+    }
+    else
+        return m * pwr(m,n-1);
+    
+}
+
 int main()
 {
-    func1(89,67,45,41);
-
+    //func1(89,67,45,41);
+    int power = pwr(2,3);
+    printf("%d",power);
     return 0;
 }
