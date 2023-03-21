@@ -1,4 +1,4 @@
-# Codes
+# C Codes
 
 This is basic c programs operations on arrays: searching and sorting.
 
